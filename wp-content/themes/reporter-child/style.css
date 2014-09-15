@@ -1,0 +1,62 @@
+/*
+Theme Name: Reporter Child
+Theme URI: http://designerthemes.com/preview/?theme=reporter
+Description: This is a child theme of Reporter theme
+Author: Mauricio Alzate Montoya
+Author URI: htt://www.example.com
+Template: reporter
+Version: 0.1
+*/
+
+@import url("../reporter/style.css");
+
+h2.entry-title .sb-topic {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h2.entry-title .sb-separator {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+h2.entry-title .sb-separator:after,  .sb-separator:before  {
+	content: " ";
+	/*letter-spacing: -3px;*/
+}
+
+h3.entry-title .sb-topic {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h3.entry-title .sb-separator {
+	color: #d12f2f;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+h3.entry-title .sb-separator:after,  .sb-separator:before  {
+	content: " ";
+	/*letter-spacing: -3px;*/
+}
+
+.sp-author {
+	font-size: 0.8em;
+	position: absolute;
+	top: 10px;
+	left: 70%;
+}
+
+.sp-author:before {
+	content: "di "	
+}
+
+.posts .entry-content {
+
+	margin-top: 7px;
+}
+
+.posts .entry-title {
+	font-size: 1em;
+}
