@@ -42,7 +42,7 @@ h3.entry-title .sb-separator:after,  .sb-separator:before  {
 }
 
 .sp-author {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	position: absolute;
 	top: 10px;
 	left: 70%;
@@ -59,4 +59,103 @@ h3.entry-title .sb-separator:after,  .sb-separator:before  {
 
 .posts .entry-title {
 	font-size: 1em;
+}
+
+/*
+*	PAGINA DEI CANDIDATI
+*/
+
+.candidate-thumbnail {
+	border: solid white 3px;
+	display: block;
+	float: left;
+	height: 50px;
+	margin-right: 10px;
+	width: 50px;
+}
+
+.candidate-details {
+
+	margin-left: 60px;
+}
+
+.candidate-social ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.candidate-social ul li {
+	display: inline;
+}
+
+.candidate-social ul li a{
+	text-decoration: none;
+	padding-right: 5px;
+}
+
+/*
+*	PAGINA SINGOLO CANDIDATO
+*/
+
+.candidate-profile {
+	float: left;
+	margin-right: 20px;
+}
+
+.candidate-photo {
+	margin-bottom: 10px;
+}
+
+
+
+/*
+*	WIDGET SB CANDIDATI
+*/
+
+.widget-candidate-thumbnail {
+	float: left;
+	height: 40px;
+	width: 40px;
+	margin: 10px;
+}
+
+.widget-candidate-name {
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+.widget-candidate-name a {
+}
+
+.widget-candidate-target {
+	font-size: 11px;
+	color: #CCCCCC;
+}
+
+
+.rubrica-image {
+	float: left;
+	width: auto;
+	margin-right: 1em;
+}
+
+.the-post.row.rubrica{
+	background-color: #d12f2f;
+	padding: 1em;
+}
+
+.entry-title.rubrica a{
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.entry-content.rubrica{
+	color:rgba(255, 255, 255, 0.6);
+	margin-bottom: 0px;
+}
+
+h4.widget-rubrica-title {
+	color: #d12f2f;
+	text-transform: uppercase;
 }

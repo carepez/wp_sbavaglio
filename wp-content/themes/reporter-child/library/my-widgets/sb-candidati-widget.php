@@ -56,16 +56,14 @@ class SB_Candidati extends WP_Widget {
 						?>
 						<article class="the-post row">
 			
-							<div class="featured-image">
+							<div class="widget-candidate-thumbnail">
 								<img src="<?php echo get_field('sb_foto_candidato'); ?>"/></a>
 							</div>
 							<!-- /.featured-image -->
 							
 							<div class="details">
-								<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								<div class="entry-content">
-									<?php echo get_field('sb_biografia_candidato'); ?>
-								</div>
+								<h3 class="widget-candidate-name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<h4 class="widget-candidate-target">Senza Bavaglio</h4>
 							</div>
 							<!-- /.details -->
 					

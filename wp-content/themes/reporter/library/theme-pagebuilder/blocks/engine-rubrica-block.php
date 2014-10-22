@@ -86,6 +86,7 @@ class Engine_Rubrica_Block extends AQ_Block {
 					<?php
 					if ( $image_id ) {
 						echo wp_get_attachment_image( $image_id, 'thumbnail', false );
+						//echo wp_get_attachment_image( $image_id,  array(200,200), false );
 						unset( $button_class[ array_search( 'button-hero', $button_class ) ] );
 					}
 					?>

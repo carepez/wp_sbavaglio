@@ -17,7 +17,7 @@ function engine_rubrica_sc( $atts ) {
 		'excerpt_length' => '17'
 	), $atts ) );
 
-	$img_src=engine_resize( $img, 90, 50, true );
+	$img_src=engine_resize( $img, 120, 90, true );
 	
 	// Defaults
 	if(!isset($category)) $category = '';
@@ -66,7 +66,7 @@ function engine_rubrica_sc( $atts ) {
 	?>
 	
 	<?php if($title): ?>
-	<h4 class="widget-title"><?php echo stripslashes($title); ?></h4>
+	<h4 class="widget-rubrica-title"><?php echo stripslashes($title); ?></h4>
 	<?php endif; ?>
 
 	<?php if($author): ?>
@@ -99,20 +99,25 @@ function engine_rubrica_sc( $atts ) {
 		<?php elseif( $style == 'title_meta_thumb_side'): ?>
 		<li class="title-meta-thumb-side title-meta">
 		
-			<article class="the-post row">
+			<article class="the-post row rubrica">
 			
-				<div class="featured-image">
+				<div class="rubrica-image">
 					<a href="<?php the_permalink(); ?>"><img src="<?php echo $img_src ?>"/></a>
 				</div>
 				<!-- /.featured-image -->
 				
 				<div class="details">
-					<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<div class="entry-meta">
+					<h3 class="entry-title rubrica"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<!--<div class="entry-meta">
 						<span class="entry-comments"><a href="<?php comments_link(); ?>"><i class="icon-comments"></i><?php comments_number(__('0 Comments','engine'), __('1 Comment','engine'), '% ' . __('Comments','engine')); ?></a></span>
 						<span class="entry-date"><i class="icon-calendar"></i><?php the_time( get_option('date_format') ); ?></span>				
-					</div>
+					</div>-->
 				</div>
+				<?php if( $excerpt_length ) : ?>
+				<div class="entry-content rubrica">
+					<p><?php echo engine_excerpt($excerpt_length); ?></p>
+				</div>
+				<?php endif; ?>
 				<!-- /.details -->
 		
 			</article>

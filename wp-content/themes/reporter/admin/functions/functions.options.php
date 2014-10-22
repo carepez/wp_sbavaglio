@@ -181,7 +181,7 @@ $of_options[] = array( "name" => __("Header Left Drop down Title",'engine'),
 $of_options[] = array( "name" => __("Header Right Drop down Title",'engine'),
 					"desc" => __("Enter a title for the left drop down that appears in the header.",'engine'),
 					"id" => "header_menu_right_title",
-					"std" => 'Right Title',
+					"std" => 'Sindacato 2014',
 					"type" => "text");
 
 
